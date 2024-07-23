@@ -1,0 +1,145 @@
+.about-container {
+    min-height: 100vh;
+    height: fit-content;
+    background: var(--color-primary-alt);
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    overflow: auto;
+    padding: 4rem;
+}
+
+
+.about-me-left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    color: var(--color-secondary-alt);
+    padding-bottom: 1.5rem;
+}
+
+.about-text {
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.about-me-right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-drawing {
+    max-width: 950px;
+    width: 90%;
+    height: auto;
+}
+
+.spotify-component {
+    display: flex;
+    background-color: var(--color-primary);
+    width: 62%;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 50px;
+    position: relative;
+}
+
+.spotify-icon {
+    font-size: 2.5rem;
+    color: var(--color-secondary-alt);
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+}
+
+.spotify-text {
+    margin: 0rem 1rem;
+    padding-right: 70px;
+}
+
+.spotify-text a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+
+.album-cover {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    top: 13px;
+    right: 30px;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .intro {
+        letter-spacing: normal;
+    }
+    
+    .me-drawing {
+        width: 100%;
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 715px) {
+    .spotify-component {
+        width: 100%;
+    }
+
+    .me-drawing {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        padding: 4rem 2rem;
+    }
+
+    .intro {
+        font-size: 2.75rem;
+    }
+
+    .about-text {
+        font-size: 0.75rem;
+        padding: 0.5rem 0rem;
+    }
+
+    .spotify-component {
+        width: 95%;
+    }
+
+    .spotify-icon {
+        font-size: 2.2rem;
+        margin-left: 0.5rem;
+    }
+
+    .spotify-text {
+        margin: 0rem 1rem;
+        padding-right: 70px;
+    }
+
+    .spotify-text h6 {
+        padding: 0rem;
+        font-size: 0.75rem;
+    }
+
+    .spotify-text a {
+        font-size: 0.75rem;
+    }
+
+}

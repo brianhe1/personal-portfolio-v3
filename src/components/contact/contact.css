@@ -1,0 +1,158 @@
+.contact-container {
+    padding: 3rem;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.contact-container h5 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.contact-container form {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-and-email {
+    display: flex;
+}
+
+.name-and-email .name-form-group,
+.name-and-email .email-form-group {
+    justify-content: start;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-form-group label,
+.email-form-group label,
+.message-group label {
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.name-form-group input, 
+.email-form-group input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid var(--color-light);
+    transition: var(--transition);
+}
+
+.name-form-group input {
+    width: 85%;
+}
+
+.name-form-group input:focus, 
+.email-form-group input:focus,
+.message-group textarea:focus {
+    border: 2px solid var(--color-secondary);
+}
+
+.message-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-group label {
+    justify-content: start;
+    width: 100%;
+}
+
+.message-group textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    border: 2px solid var(--color-light);
+    padding: 0.75rem;
+    padding-bottom: 4rem;
+    border-radius: 10px;
+    overflow: scroll;
+    resize: none;
+    transition: var(--transition);
+}
+
+.message-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    margin-top: 4rem;
+    border: 2px solid var(--color-secondary);
+    border-radius: 25px;
+    background: none;
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.message-group .message-btn:hover {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .contact-container form {
+        width: 90%;
+    }
+
+    .message-btn {
+        width: 50%;
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    .contact-container {
+        padding: 2rem;
+    }
+
+    .contact-container h5 {
+        margin-bottom: 2rem;
+    }
+
+    .contact-container form {
+        width: 100%;
+    }
+
+    .name-and-email {
+        flex-direction: column;
+    }
+
+    .message-btn {
+        margin-top: 2rem;
+    }
+
+    .name-and-email .name-form-group,
+    .name-and-email .email-form-group,
+    .name-form-group input {
+        width: 100%;
+    }
+}

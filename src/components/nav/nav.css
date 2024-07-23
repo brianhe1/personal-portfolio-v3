@@ -1,0 +1,229 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.75rem 3.75rem;
+    z-index: 2;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+}
+
+.nav-links a {
+    color: var(--color-tertiary);
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav-links a:after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    background-color: var(--color-secondary);
+    width: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    bottom: -6px;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+.nav-links .btn {
+    color: var(--color-secondary);
+}
+
+/* don't know if i want this styling */
+.nav-links .btn.active {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.nav-links .btn.active:after {
+    width: 0;
+}
+
+.nav-links .btn:hover {
+    color: var(--color-primary);
+}
+
+.nav-links a.active {
+    color: var(--color-secondary);
+}
+
+.nav-links a.active:after,
+.nav-links a:not(.btn):hover:after {
+    width: 90%;
+}
+
+.logo img {
+    margin-top: 0.5rem;
+    height: 25px;
+    transition: var(--transition);
+}
+
+.logo img:hover {
+    transform: scale(1.025);
+}
+
+.hamburger {
+    position: relative;
+    width: 2rem;
+    height: 2px;
+    background: var(--color-tertiary);
+    cursor: pointer;
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.hamburger:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    right: 0;
+    background: var(--color-tertiary);
+    border-radius: 10px;
+    transition: var(--transition);
+    top: 12.5px;
+    width: 1.25rem;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 53px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle-menu,
+.menu {
+   display: none;
+}
+
+.nav-links-container input:checked ~ .hamburger {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.nav-links-container input:checked ~ .hamburger:after {
+    top: 0;
+    transform: rotate(90deg);
+    width: 30px;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links-container input:checked ~ .menu {
+        position: absolute;
+        background: var(--color-primary-alt);
+        width: 35vw;
+        padding: 4rem 3rem 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        right: 2.5rem;
+        top: 1.75rem;
+        border-radius: 15px;
+        gap: 0.9rem;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .menu h6 {
+        padding-top: 2rem;
+        color: var(--color-light);
+    }
+
+    .menu li a {
+        position: relative;
+    }
+
+    .menu li a:after {
+        content: "";
+        position: absolute;
+        margin: left;
+        bottom: -4px;
+        background-color: var(--color-secondary);
+        width: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        transform-origin: 0% 100%;
+        transition: var(--transition);
+    }
+    
+    .menu li a:hover:after {
+        width: 100%;
+    }
+
+    .menu li a {
+        color: var(--color-tertiary);
+    }
+
+    .menu li a:hover {
+        color: var(--color-secondary);
+        transition: var(--transition);
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 2.75rem 2rem;
+    }
+
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links-container input:checked ~ .menu {
+        position: absolute;
+        background: var(--color-primary);
+        padding: 3.5rem 4rem;
+        right: 0;
+        top: 7rem;
+        gap: 1rem;
+        width: 100%;
+        border-radius: 0px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .menu h6 {
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .nav-links-container a {
+        display: none;
+    }
+
+    .nav-links-container .menu a {
+        display: flex;
+    }
+
+    p,
+    br {
+        display: none;
+    }
+}
+  

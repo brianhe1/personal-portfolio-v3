@@ -1,0 +1,112 @@
+footer {
+    min-height: 30vh;
+    height: fit-content;
+    background: #f5f5f6;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    padding: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer-logo {
+    max-height: 30px;
+}
+
+.logo-and-socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.permalinks-column h6,
+.footer-socials h6 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.permalinks li {
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.permalinks li a {
+    color: var(--color-tertiary);
+    transition: var(--transition);
+}
+
+.permalinks li a:hover {
+    color: var(--color-secondary);
+}
+
+.footer-socials a {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+    color: black;
+    transition: var(--transition);
+}
+
+.footer-socials a:hover {
+    color: var(--color-secondary);
+}
+
+.site-description {
+    margin-left: 1rem;
+}
+
+.site-description h6 {
+    font-size: 0.7rem;
+}
+
+.site-description h6 a {
+    color: var(--color-tertiary);
+    transition: var(--transition);
+}
+
+.site-description h6 a:hover {
+    color: var(--color-secondary);
+} 
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+    .footer-logo {
+        max-height: 25px;
+    }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 660px) {
+    .footer-logo {
+        max-height: 25px;
+    }
+    .footer-socials a {
+        font-size: 1.4rem;
+    }
+    .permalinks li a {
+        font-size: 0.8rem
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .footer-logo {
+        max-height: 25px;
+    }
+
+    h6 {
+        padding-top: 1rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .permalinks li {
+        padding-bottom: 0.25rem;
+    }
+
+    .site-description {
+        margin-left: 0;
+    }
+}

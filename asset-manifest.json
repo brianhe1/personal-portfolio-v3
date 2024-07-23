@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio-v3/static/css/main.37923aa5.css",
+    "main.js": "/personal-portfolio-v3/static/js/main.81a4c003.js",
+    "static/media/album.png": "/personal-portfolio-v3/static/media/album.c969f86b465efad9f5a0.png",
+    "static/media/project-3.jpg": "/personal-portfolio-v3/static/media/project-3.5a8abea6c6b02768ac42.jpg",
+    "static/media/me-drawing.png": "/personal-portfolio-v3/static/media/me-drawing.a48273ffccb63fc03dcd.png",
+    "static/media/project-4.jpg": "/personal-portfolio-v3/static/media/project-4.79ad131ecc7bf09d212a.jpg",
+    "static/media/project-6.jpg": "/personal-portfolio-v3/static/media/project-6.f4aa808a981129a65e1d.jpg",
+    "static/media/project-2.jpg": "/personal-portfolio-v3/static/media/project-2.f9cbca5fa718ddee707d.jpg",
+    "static/media/project-5.jpg": "/personal-portfolio-v3/static/media/project-5.fc4dbab36f77fa494f38.jpg",
+    "static/media/project-1.jpg": "/personal-portfolio-v3/static/media/project-1.27fec40f63f4a45b1d7b.jpg",
+    "static/media/logo.png": "/personal-portfolio-v3/static/media/logo.6f07aeceee27941371cb.png",
+    "static/media/logo-hover.png": "/personal-portfolio-v3/static/media/logo-hover.b5f8d221bc7ce35be786.png",
+    "static/media/BrianHeResume.pdf": "/personal-portfolio-v3/static/media/BrianHeResume.774f68c11454eed56e5b.pdf",
+    "index.html": "/personal-portfolio-v3/index.html",
+    "main.37923aa5.css.map": "/personal-portfolio-v3/static/css/main.37923aa5.css.map",
+    "main.81a4c003.js.map": "/personal-portfolio-v3/static/js/main.81a4c003.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37923aa5.css",
+    "static/js/main.81a4c003.js"
+  ]
+}
